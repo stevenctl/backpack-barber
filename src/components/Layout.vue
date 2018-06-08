@@ -25,7 +25,7 @@
             <!--</v-list>-->
         <!--</v-navigation-drawer>-->
         <v-toolbar color="secondary" dark fixed app>
-            <img height="50%" src="/public/backpack.png">
+            <img height="50%" src="./public/backpack.png">
             <!--<v-toolbar-side-icon @click.stop="drawer = !drawer"></v-toolbar-side-icon>-->
             <v-toolbar-title>Backpack Barber</v-toolbar-title>
         </v-toolbar>
