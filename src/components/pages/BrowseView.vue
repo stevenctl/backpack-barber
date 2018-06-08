@@ -1,6 +1,7 @@
 <template>
     <v-container v-bind="{ [`grid-list-xs`]: true }" fluid>
         <v-layout row wrap>
+
             <v-flex v-for="n in 24" :key="n" xs4 >
                 <v-card
                     flat
@@ -16,6 +17,15 @@
                             <div>13mi Away</div>
                         </div>
                     </v-card-title>
+                    <div>
+                        <v-icon color="primary" v-for="r in Math.floor(Math.random() * 4) + 1" :key="r">
+                            star
+                        </v-icon>
+                        <v-icon color="primary" v-if="Math.random() > 0.5">
+                            star_half
+                        </v-icon>
+                    </div>
+
                 </v-card>
             </v-flex>
         </v-layout>
